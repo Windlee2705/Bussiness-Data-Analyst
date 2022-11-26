@@ -295,3 +295,53 @@ Bảng này thể hiện tỷ lệ giữ chân khách hàng với chu kỳ là 3
 ******Như vậy, chúng ta đã làm sạch hết các data để thực hiện cho việc trực quan hóa cũng như báo cáo.******
 
 # II. Phân tích dữ liệu theo yêu cầu
+
+## I. Tỷ lệ khách hàng nữ của cửa hàng
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2015.png)
+
+Ta có bảng Dashboard về giới tính: 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2016.png)
+
+Từ Dashboard, ta dễ dàng nhận thấy tỷ lệ khách hàng là 22.38% với số lượng là 8826 người. Thế nhưng trong file dữ liệu, một số lượng lớn người có giới tính là không rõ, chiếm 43.88%. Ta không biết trong đó có bao nhiêu người có giới tính là nam, bao nhiêu người có giới tính nữ hay LGBT. 
+
+Nếu ta bỏ chọn những id có giới tính không rõ, ta sẽ có: 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2017.png)
+
+Tỷ lệ nữ lúc này chiếm 39,88% với tổng số lượng khách hàng là 22,13K. Ta sẽ coi 22.13K người này mẫu để có thể tính tỷ lệ khách nữ trong tổng thể.
+
+Ta có:
+
+N=39.44K, n=22.13K và m=8.83K.
+
+Tỷ lệ khách nữ trong mẫu là f=39.88%.
+
+Ta sử dụng công thức: 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2018.png)
+
+trong đó **α =** 0.05, $Z_{α/2}$ = $φ^{-1}$(0.475) = 1.96
+
+Khi đó tỷ lệ khách hàng có giới tính nữ trong tổng thể là: 
+
+P =(0,3939;0,4036) = (39,39%;40,36%)
+
+******Như vậy, tỷ lệ khách nữ của cửa hàng là 39,39%-40,36%******
+
+Ngoài ra, ta còn làm thêm Dashboard về số lượng khách hàng chia theo giới tính qua từng ngày để chị Yên có cái nhìn chi tiết hơn:
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2019.png)
+
+## II. Doanh số của của công ty
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2020.png)
+
+Từ các file dữ liệu đã được làm sạch, ta xây dựng Dashboard thể hiện doanh số của công ty:
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2021.png)
+
+Dashboard trên bao gồm các biểu đồ thể hiện doanh số của công ty theo ngày, theo tuần và chi tiết doanh số của công ty theo từng ngày trong tuần tương ứng. 
+
+Do chị Nhung thường có cuộc họp với phòng kinh doanh vào sáng thứ 6 hàng tuần nên ta tạo biểu đồ thể hiện chi tiết doanh số của công ty theo từng tuần bắt đầu từ thứ 6 và kết thúc vào thứ 5 để ngay hôm sau, chị Nhung có thông tin doanh số chi tiết nhất.
