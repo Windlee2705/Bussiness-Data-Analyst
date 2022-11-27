@@ -344,4 +344,88 @@ Từ các file dữ liệu đã được làm sạch, ta xây dựng Dashboard t
 
 Dashboard trên bao gồm các biểu đồ thể hiện doanh số của công ty theo ngày, theo tuần và chi tiết doanh số của công ty theo từng ngày trong tuần tương ứng. 
 
-Do chị Nhung thường có cuộc họp với phòng kinh doanh vào sáng thứ 6 hàng tuần nên ta tạo biểu đồ thể hiện chi tiết doanh số của công ty theo từng tuần bắt đầu từ thứ 6 và kết thúc vào thứ 5 để ngay hôm sau, chị Nhung có thông tin doanh số chi tiết nhất.
+Nhìn vào các biểu đồ trên, ta có thể dễ dàng thấy được doanh số của công ty đang có xu hướng giảm vào những ngày cuối năm 2019 và đầu năm 2020. Đó là khoảng thời gian mà dịch Covid bắt đầu xuất hiện và bùng phát mạnh mẽ. Doanh số công ty giảm từ khoảng 27 nghìn đơn hàng/tuần vào tuần thứ 45 năm 2019 xuống 11 nghìn vào tuần thứ 5 năm 2020. Doanh số trung bình của công ty theo tuần đạt mức 16.26 nghìn đơn hàng. 
+
+Do chị Nhung thường có cuộc họp với phòng kinh doanh vào sáng thứ 6 hàng tuần nên ta tạo biểu đồ thể hiện chi tiết doanh số của công ty theo từng tuần bắt đầu từ thứ 6 và kết thúc vào thứ 5 để ngay hôm sau, chị Nhung có thông tin doanh số chi tiết nhất. 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2022.png)
+
+Ví dụ như tuần thứ 48 năm 2019, chúng ta có biểu đồ doanh số theo từng ngày của tuần như trên. Trong đó, ngày bán được nhiều nhất của tuần là ngày 23/11/2019 với tổng số đơn hàng là 4840 đơn hàng, ngày bán được ít nhất của tuần là 27/11/2019 với tổng đơn hàng là 2727 đơn hàng. Với biểu đồ này, chị Nhung có thể biết được chi tiết từng ngày trong tuần, từ đó rút ra ngày nào trong tuần có doanh số cao nhất và ngày nào có doanh số thấp nhất, từ đó chị có thể cùng với phòng kinh doanh đưa ra những giải pháp hợp lý để biết được lý do tại sao hôm đó cửa hàng của công ty lại nhiều đơn hay tại sao hôm đó cửa hàng lại ít đơn đặt hàng.
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2023.png)
+
+Với biểu đồ doanh số theo ngày, chúng ta có thể biết được chi tiết số lượng đơn đặt hàng của công ty theo từng ngày. Ví dụ vào ngày 03/01/2020 công ty có tổng số lượng đơn đặt hàng là 1752 đơn hàng. Đồng thời, từ các số lượng đơn hàng theo từng ngày đã có, chúng ta cũng có thể dự báo được về số đơn hàng của các ngày tiếp theo. 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2024.png)
+
+Vào ngày 28/02/2020, dự báo đưa ra cửa hàng có thể đạt hơn 3000 đơn hàng với khoảng ước lượng giao động từ 25 đến 6217.
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2025.png)
+
+## III. Phân tích các yêu cầu của CEO
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2026.png)
+
+### I. Hoạt động quảng cáo và truyền thông
+
+Để có thể đánh giá mức độ hiệu quả của hoạt động quảng cáo và truyền thông của công ty, ta cần phải biết được số lượng khách hàng theo từng nguồn của công ty. Liệu khách hàng biết đến công ty qua đâu? Có bao nhiêu khách hàng biết đến công ty qua **Sàn thương mại điện tử**, bao nhiêu khách hàng biết đến công ty qua **Website công ty** hay biết đến do đến trực tiếp **cửa hàng** của công ty?
+
+Để có thể thực hiện được điều này, ta tạo một Dashboard bao gồm các biểu đồ thể hiện lượng khách hàng qua từng kênh của công ty. 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2027.png)
+
+Phía trên là biểu đồ lượng khách hàng mời theo ngày của công ty. Nhìn qua, ta có thể thấy lượng khách hàng mà công ty có được nhiều nhất là trong khoảng tháng 11 năm 2019. Sau đó, lượng khách hàng đang có xu hướng giảm vào năm 2020. Trong đó, lượng khách hàng mới biết đến công ty nhiều nhất là qua **Website công ty**, tỷ lệ này chiếm 80.28%, sau đó là biết đến bằng cách đến **trực tiếp cửa hàng**(16.21%) và thấp nhất là qua **Sàn thương mại điện tử** với chỉ 3.51%. 
+
+Như vậy, mức độ hiệu quả của hoạt động quảng cáo và truyền thông của Website công ty đang làm rất tốt, thế nhưng qua **Cửa hàng** và **Sàn thương mại điện tử** lại đang khá thấp. Đặc biệt là sàn thương mại điện tử, một kênh rất tiềm năng của công ty lại có mức độ thu hút khách hàng ở mức thấp nhất. Tuy nhiên, từ biểu đồ trên ta thấy được qua ngày 22/01/2020 và ngày 05/02/2020 thì lượng khách hàng lại tăng một cách đột biến, đặc biệt là qua **cửa hàng**. Từ đó ta có thể đặt ra câu hỏi tại sao vào hai ngày này lượng khách hàng lại tăng như vậy để tìm ra giải pháp cho các ngày còn lại cho công ty.  
+
+Bên cạnh việc đánh giá mức độ hiệu quả của hoạt động truyền thông để thu hút khách hàng mời, ta cũng phải tìm hiểu mức độ hiệu quả này để giữ chân các khách hàng cũ. 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2028.png)
+
+Biểu đồ trên cho ta thấy mức độ hiệu quả của hoạt động truyền thông để giữ chân khách hàng cũ đang ở mức độ khá ổn định. Trong đó, lượng khách hàng nhiều nhất vẫn là qua kênh **Website công ty** với 73.85%. Tiếp theo đó là qua **Cửa hàng** với 20.79% và thấp nhất là **Sàn thương mại điện tử** với 5.36%.  
+
+## II. Tỷ lệ chuyển đổi khách hàng
+
+Để biết được tỷ lệ chuyển đổi khách hàng, ta tìm được bằng cách lấy số lượng khách hàng ghé qua cửa hàng của công ty qua các nguồn kênh và mua hàng chia cho tổng số lượng khách hàng ghé qua. 
+
+Ta đã tạo ra bảng Conversion_rate từ bước làm sạch dữ liệu ở phía trên. Từ những dữ liệu của bảng này, ta đem vào Power BI để mô hình hóa: 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2029.png)
+
+Tỷ lệ chuyển đổi khách hàng có xu hướng tăng trong hai tháng 11 và 12 năm 2019, trong đó cao nhất là 38.54%. Sở dĩ tỷ lệ này tăng mạnh như vậy là có thể là do vào những ngày cuối năm 2019 và đầu năm 2020 vào các đợt như Noel, năm mới thì công ty đã có những chương trình ưu đãi thu hút số lượng lớn khách hàng. Sau đó, tỷ lệ này giảm mạnh xuống vào cuối tháng đầu tiên năm 2020 và đang giữ ở mức tương đối ổn định vào thời điểm hiện tại. Tỷ lệ chuyển đổi khách hàng trung bình của công ty là 23.02%. 
+
+Ta có thể xem tỷ lệ chuyển đổi khách hàng qua từng kênh của công ty. 
+
+Cửa hàng: 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2030.png)
+
+Sàn thương mại điện tử: 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2031.png)
+
+Website công ty: 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2032.png)
+
+Tỷ lệ này với từng kênh đều có xu hướng tăng, trong khoảng trên 20%. Điều đó chứng tỏ cảm nhận của các bạn bán hàng là khá chính xác. 
+
+### III. Tỷ lệ giữ chân khách hàng
+
+Để tìm được tỷ lệ giữ chân khách hàng, ta cần biết được lượng khách hàng có được của kỳ này và lượng khách hàng có được ở kỳ trước. Bên cạnh đó, ta có thể hoàn toàn tính được kỳ này có thêm bao nhiêu khách mới và có bao nhiêu khách mất đi. 
+
+Ta đã tạo bảng data_frame2_group(chu kỳ bằng 30 ngày) ở bước làm sạch dữ liệu phía trên: 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2033.png)
+
+Từ đó, ta sử dụng Power BI để mô hình hóa dữ liệu: 
+
+Chu kỳ 30 ngày: 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2034.png)
+
+Chu kỳ 15 ngày: 
+
+![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2035.png)
+
+Tỷ lệ giữ chân khách hàng có xu hướng tăng. Trung bình với mỗi khách hàng sẽ mất khoảng 4.23 ngày để mua hàng lại lần nữa. Điều đó có vẻ khá nhanh bởi trong tệp dữ liệu sẽ có những khách lẻ và khách buôn. Ta cần phải chia 2 loại khách này ra để báo cáo chính xác hơn.
