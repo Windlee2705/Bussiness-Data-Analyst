@@ -428,4 +428,4 @@ Chu kỳ 15 ngày:
 
 ![Untitled](Data%20Analyst%20Report%20f5626bd182254503b8337511eead6559/Untitled%2035.png)
 
-Tỷ lệ giữ chân khách hàng có xu hướng tăng. Trung bình với mỗi khách hàng sẽ mất khoảng 4.23 ngày để mua hàng lại lần nữa. Điều đó có vẻ khá nhanh bởi trong tệp dữ liệu sẽ có những khách lẻ và khách buôn. Ta cần phải chia 2 loại khách này ra để báo cáo chính xác hơn.
+Tỷ lệ giữ chân khách hàng có xu hướng tăng. Từ bảng rebuy_time, ta đưa vào mô hình hóa và tính ra được trung bình với mỗi khách hàng sẽ mất khoảng 4.23 ngày để mua hàng lại lần nữa. 
